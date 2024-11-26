@@ -1,10 +1,10 @@
 List <string> ogrenciListe = new List<string>();
-ogrenciListe.Add("ahmet");
-ogrenciListe.Add("mehmet");
+ogrenciListe.Add("Ali");
+ogrenciListe.Add("Veli");
 
 int ogrencisayi = 0;
 
-Console.WriteLine(" geziye gelenler");
+Console.WriteLine(" Geziye Gelenler");
 while (true)
 {
  
@@ -26,7 +26,7 @@ while (true)
     
 }
 
-Console.WriteLine("araç kaç kişşi");
+Console.WriteLine("Araç kaç kişi");
 int kapasite = Convert.ToInt32(Console.ReadLine());
     if (ogrencisayi <= kapasite)
     { 
