@@ -1,33 +1,44 @@
-List <string> ogrenciListe = new List<string>();
-ogrenciListe.Add("Ali");
-ogrenciListe.Add("Veli");
-
-int ogrencisayi = 0;
-
-Console.WriteLine(" Geziye Gelenler");
-while (true)
+namespace Servis_Projesi
 {
- 
-    int karar = 0;
-    karar = Convert.ToInt32(Console.ReadLine());
-    if (karar == 1)
+    internal class Program
     {
-        ogrenciListe.Add(Console.ReadLine());
-        ogrencisayi++;
-    }
-    else if (karar == 2)
-    {
-        Console.WriteLine(" top eklenen" + ogrencisayi);
+        static void Main(string[] args)
+        {
+            List<string> ogrenciListe = new List<string>();
+            ogrenciListe.Add("Ali");
+            ogrenciListe.Add("Veli");
 
+            int ogrencisayi = 0;
+
+            Console.WriteLine(" Geziye Gelenler");
+            while (true)
+            {
+
+                int karar = 0;
+                karar = Convert.ToInt32(Console.ReadLine());
+                if (karar == 1)
+                {
+                    ogrenciListe.Add(Console.ReadLine());
+                    ogrencisayi++;
+                }
+                else if (karar == 2)
+                {
+                    Console.WriteLine(" top eklenen" + ogrencisayi);
+
+                }
+                else
+                {
+                    Console.WriteLine("geçersiz");
+
+                }
+
+                Console.WriteLine("Araç kaç kişi");
+                int kapasite = Convert.ToInt32(Console.ReadLine());
+                if (ogrencisayi <= kapasite)
+                {
+                }
+            }
+        }
     }
-    else 
-    {
-        Console.WriteLine("geçersiz");
-    
 }
 
-Console.WriteLine("Araç kaç kişi");
-int kapasite = Convert.ToInt32(Console.ReadLine());
-    if (ogrencisayi <= kapasite)
-    { 
-    }
